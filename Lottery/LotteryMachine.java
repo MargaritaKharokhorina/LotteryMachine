@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class LotteryMachine {
     public static void main(String[] args) { 
-        String text = "Teddy_Bear Barbie_Doll Lego_Pirates Set_of_toy_cars Doll_house Hello_Kitty Puzzle_Animal Plasticine Plush_Shark Rubber_ball Badminton;";
+        String text = "Teddy_Bear Barbie_Doll Lego_Pirates Set_of_toy_cars Doll_house Hello_Kitty Puzzle_Animal Plasticine Plush_Shark Rubber_ball Badminton Singing_Heart;";
         String[] words = text.split(" "); 
-        System.out.println("All toys: " + Arrays.toString(words)); 
+        System.out.println("All toys: " + Arrays.toString(words)); //создан массив
         int min = 1;
         int max = 10;
         int diff = max - min;
@@ -20,10 +20,10 @@ public class LotteryMachine {
         }
         int num =  0;
         try (Scanner myscan = new Scanner (System.in)) {
-            System.out.println("Let's start! Enter an integer from 0 to 10: ");
+            System.out.println("Let's start! Enter an integer from 0 to 11: ");
             num = myscan.nextInt();
             // счастливое число - 4, у пользователя одна попытка
-            if (num < 0 || num > 10) {
+            if (num < 0 || num > 11) {
                 System.out.println ("You entered a number outside the given limits");
                 System.out.println("Enter an integer from 0 to 10 again: ");
                 num = myscan.nextInt();
