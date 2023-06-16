@@ -16,7 +16,7 @@ public class LotteryMachine {
         Random random = new Random();
         int i = random.nextInt(diff + 1); {
             i += min;
-            System.out.println("Lottery prize is: " + words[i]); 
+            System.out.println("Lottery prize is: " + words[i]); //рандомно выбран элемент массива-игрушка для розыгрыша
         }
         int num =  0;
         try (Scanner myscan = new Scanner (System.in)) {
