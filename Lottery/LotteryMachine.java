@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class LotteryMachine {
     public static void main(String[] args) { 
-        String text = "Teddy_Bear Barbie_Doll Lego_Pirates Set_of_toy_cars Doll_house Hello_Kitty Puzzle_Animal Plasticine Plush_Shark Rubber_ball Badminton Singing_Heart;";
+        String text = "Teddy_Bear Barbie_Doll Lego_Pirates Set_of_toy_cars Doll_house Hello_Kitty Puzzle_Animal Plasticine Plush_Shark Rubber_ball Singing_Heart;";
         String[] words = text.split(" "); 
         System.out.println("All toys: " + Arrays.toString(words)); //создан массив
         int min = 1;
