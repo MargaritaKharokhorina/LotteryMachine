@@ -14,7 +14,7 @@ public class AddingAToy {
                 try (Scanner sc = new Scanner(System.in)) {
                     System.out.println( "Enter toy ID: ");
                     int i = scan.nextInt();
-                    System.out.println( "Enter the name of toy: ");
+                    System.out.println( "Enter toy name: ");
                     String name = sc.nextLine();
                     sb.append(i);
                     sb.append(',');
